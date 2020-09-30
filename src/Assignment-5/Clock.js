@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import icon from "../Assignment-5/images2.png";
 import backgroundicon from "../Assignment-5/images (1).jpg";
-import "../Assignment-5/MyStyleSheet.css";
+// import "../Assignment-5/MyStyleSheet.css";
 import {
   View,
   Text,
@@ -17,8 +17,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginLeft: "60px",
     height: "180px",
-    //backgroundColor: "gray"
-    //backgroundColor: "rgb(0,0,0)"
     backgroundColor: "rgba(0,0,0,0.1)"
   },
   textStyle: {
@@ -36,23 +34,6 @@ const styles = StyleSheet.create({
   overlay: {
     backgroundColor: "rgba(0,0,0,0.1)"
   }
-  //   avatarStyle: {
-  //     width: 50,
-  //     height: 100,
-  //     marginTop: 0,
-  //     borderRadius: 20,
-  //     alignSelf: "center"
-  //   },
-  //   textStyle: {
-  //     marginTop: 60,
-  //     fontSize: 18,
-  //     marginBottom: 22,
-  //     color: "#00bfff",
-  //     fontWeight: "bold"
-  //   },
-  //   balanceContainer: {
-  //     padding: 2
-  //   }
 });
 
 class Clock extends Component {
@@ -73,7 +54,6 @@ class Clock extends Component {
             >
               <td>
                 <img src={icon} width="20px" height="20px" />
-
                 <label style={{ fontSize: "25px" }}> Digital Clock</label>
               </td>
             </tr>

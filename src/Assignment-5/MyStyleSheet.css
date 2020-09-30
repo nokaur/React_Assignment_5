@@ -1,13 +1,10 @@
 .table {
   height: 100px;
   width: 300px;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
 }
 
-.background{
-  background-size: 190px;
-  background-position: center;
-  background-repeat: no-repeat;
+.toggle {
+  height: "10px";
+  width:"10px";
 }
-
-
