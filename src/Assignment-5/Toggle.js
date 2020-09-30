@@ -1,16 +1,24 @@
 import React, { Component } from "react";
-// import "../Assignment-5/MyStyleSheet.css";
+import { TouchableNativeFeedbackBase } from "react-native";
+import "../Assignment-5/MyStyleSheet.css";
 import toggleOff from "../Assignment-5/toggleOff.png";
 
 class Toggle extends Component {
-  constructor(props) {
-    super();
-  }
+  tog = (event) => {
+    this.props.tog(event.target.name);
+    event.preventDefault();
+  };
   render() {
     return (
       <div>
-        <button>
-          <img src={toggleOff} alt="my image" width="40px" />
+        <button name="On" onClick={this.tog}>
+          <img
+            name="On"
+            src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/qG4j-toggleOff.png"
+            alt="my image"
+            width="40px"
+            onClick={this.tog}
+          />
         </button>
       </div>
     );

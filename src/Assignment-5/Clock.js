@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import icon from "../Assignment-5/images2.png";
 import backgroundicon from "../Assignment-5/images (1).jpg";
-// import "../Assignment-5/MyStyleSheet.css";
+import "../Assignment-5/MyStyleSheet.css";
 import {
   View,
   Text,
@@ -53,18 +53,23 @@ class Clock extends Component {
               }}
             >
               <td>
-                <img src={icon} width="20px" height="20px" />
+                <img
+                  src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/Mba2-images2.png"
+                  width="20px"
+                  height="20px"
+                />
                 <label style={{ fontSize: "25px" }}> Digital Clock</label>
               </td>
             </tr>
             <tr>
-              <td>TOGGLE</td>
+              <td>{this.props.Output}</td>
             </tr>
             <tr style={{ height: "200px" }}>
               <td>
                 <ImageBackground
                   source={{
-                    uri: `${backgroundicon}`
+                    uri:
+                      "https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/NREN-images+(1).jpg"
                   }}
                   style={styles.container}
                 >
