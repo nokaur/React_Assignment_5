@@ -11,6 +11,7 @@ import {
   Dimensions
 } from "react-native";
 
+var date = new Date().toLocaleString().split(",")[1];
 const styles = StyleSheet.create({
   container: {
     width: "170px",
@@ -62,9 +63,9 @@ class Clock extends Component {
               </td>
             </tr>
             <tr>
-              <td>{this.props.Output}</td>
+              <td></td>
             </tr>
-            <tr style={{ height: "200px" }}>
+            <tr style={{ height: "300px" }}>
               <td>
                 <ImageBackground
                   source={{
@@ -74,10 +75,10 @@ class Clock extends Component {
                   style={styles.container}
                 >
                   <View style={styles.overlay}>
-                    <Text style={styles.textStyle}>CLOCK</Text>
+                    <Text style={styles.textStyle}>{date}</Text>
                   </View>
                   <View style={[styles.overlay, { height: "101.5px" }]}>
-                    <Text style={styles.subText}>DATE</Text>
+                    <Text style={styles.subText}>{this.props.Output}</Text>
                   </View>
                 </ImageBackground>
               </td>

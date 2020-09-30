@@ -13,18 +13,18 @@ class App extends Component {
   tog = (togStatus) => {
     //alert("here");
     if (togStatus === "Off") {
-      alert("ON");
       this.setState({
-        Output: "Off"
+        Output: ""
       });
     } else if (togStatus === "On") {
-      alert("ON");
-      var day = getDay();
-      var date = getDate();
-      var month = getmonth();
-      var year = getyear();
+      var today = new Date();
+      var day = Date().split(" ")[0];
+      var date = today.getDate();
+      var month = today.toLocaleString("default", { month: "long" });
+      var year = today.getFullYear();
       this.setState({
-        Output: " " + date + " " + month + " " + year
+        Output: day + " " + date + " " + month + " " + year
+        //Output:today
       });
     }
   };
