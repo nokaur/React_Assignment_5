@@ -1,11 +1,13 @@
 import React from "react";
 import "./styles.css";
 
+import Clock from "./Assignment-5/Clock";
+import "./Assignment-5/MyStyleSheet.css";
+
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Clock />
     </div>
   );
 }
