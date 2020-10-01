@@ -43,7 +43,7 @@ class Toggle extends Component {
               <td>
                 <img
                   name="On"
-                  src={toggleOff}
+                  src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/c4AE-ToggleOff4.png"
                   alt="image"
                   width="40px"
                   onClick={this.tog}
