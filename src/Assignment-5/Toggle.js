@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { TouchableNativeFeedbackBase } from "react-native";
 import "../Assignment-5/MyStyleSheet.css";
-import toggleOff from "../Assignment-5/toggleOff.png";
-import toggleOn from "../Assignment-5/toggleOn.png";
+import toggleOff from "../Assignment-5/ToggleOff3.png";
+import toggleOn from "../Assignment-5/ToggleOn2.png";
+import Calender from "../Assignment-5/calender.png";
 
 class Toggle extends Component {
   state = {
@@ -31,51 +32,65 @@ class Toggle extends Component {
         <div
           style={{
             visibility: `${this.state.Visible1}`,
-            marginTop: "-300px",
-            marginLeft: "-70px"
+            marginTop: "-290px",
+            marginLeft: "150px",
+            textAlign: "center",
+            position: "fixed"
           }}
         >
-          <button
-            name="On"
-            onClick={this.tog}
-            style={{
-              width: "50px",
-              height: "28px"
-            }}
-          >
-            <img
-              name="On"
-              src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/qG4j-toggleOff.png"
-              alt="my image"
-              width="40px"
-              onClick={this.tog}
-            />
-          </button>
+          <table>
+            <tr>
+              <td>
+                <img
+                  name="On"
+                  src={toggleOff}
+                  alt="image"
+                  width="40px"
+                  onClick={this.tog}
+                  Style={{ background: "transparent" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={Calender}
+                  width="20px"
+                  Style={{ background: "transparent" }}
+                />
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div
           style={{
             visibility: `${this.state.Visible2}`,
-            marginTop: "-32px",
-            marginLeft: "-70px"
+            marginTop: "-290px",
+            marginLeft: "150px",
+            textAlign: "center",
+            position: "fixed"
           }}
         >
-          <button
-            name="Off"
-            onClick={this.tog}
-            style={{
-              width: "50px",
-              height: "28px"
-            }}
-          >
-            <img
-              name="Off"
-              src={toggleOn}
-              alt="my image"
-              width="40px"
-              onClick={this.tog}
-            />
-          </button>
+          <table>
+            <tr>
+              <td>
+                <img
+                  name="Off"
+                  src={toggleOn}
+                  alt="image"
+                  width="40px"
+                  onClick={this.tog}
+                  Style={{ background: "transparent" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={Calender}
+                  width="20px"
+                  Style={{ background: "transparent" }}
+                />
+              </td>
+            </tr>
+          </table>
         </div>
       </form>
     );
