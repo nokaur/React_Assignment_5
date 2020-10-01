@@ -18,7 +18,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginLeft: "60px",
     height: "180px",
-    backgroundColor: "rgba(0,0,0,0.1)"
+    //backgroundColor: "rgba(0,0,0,0.1)"
+    background: "transparent"
+    //backgroundColor:"gray"
   },
   textStyle: {
     fontSize: 18,
@@ -33,7 +35,8 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   overlay: {
-    backgroundColor: "rgba(0,0,0,0.1)"
+    backgroundColor: "rgba(0,0,0,0.09)"
+    // background: "transparent"
   }
 });
 
@@ -72,7 +75,7 @@ class Clock extends Component {
                     uri:
                       "https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/NREN-images+(1).jpg"
                   }}
-                  style={styles.container}
+                  style={[styles.container, { background: "transparent" }]}
                 >
                   <View style={styles.overlay}>
                     <Text style={styles.textStyle}>{date}</Text>
