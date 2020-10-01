@@ -43,7 +43,7 @@ class Toggle extends Component {
               <td>
                 <img
                   name="On"
-                  src={toggleOff}
+                  src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/jV3X-ToggleOff3.png"
                   alt="image"
                   width="40px"
                   onClick={this.tog}
@@ -52,7 +52,7 @@ class Toggle extends Component {
               </td>
               <td>
                 <img
-                  src={Calender}
+                  src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/N0gB-calender.png"
                   width="20px"
                   Style={{ background: "transparent" }}
                 />
@@ -75,7 +75,7 @@ class Toggle extends Component {
               <td>
                 <img
                   name="Off"
-                  src={toggleOn}
+                  src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/uxeS-ToggleOn2.png"
                   alt="image"
                   width="40px"
                   onClick={this.tog}
@@ -84,7 +84,7 @@ class Toggle extends Component {
               </td>
               <td>
                 <img
-                  src={Calender}
+                  src="https://uploads.codesandbox.io/uploads/user/927c06c2-eee9-402d-be30-5df3ec015b1b/N0gB-calender.png"
                   width="20px"
                   Style={{ background: "transparent" }}
                 />
